@@ -1,0 +1,473 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>test page</title>
+
+<meta name="keywords" content="陈菁,chenjing">
+<meta name="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript">
+  	 window.onload = function() {  
+		var validate_username = document.getElementById("validate_username");
+		var username = document.getElementById("username");
+		username.onfocus = function(){
+		validate_username.innerHTML = "&nbsp;☺".fontcolor("green").bold();
+		}
+		username.onblur = function(){
+		validate_username.innerHTML = "";
+		}
+		
+		var validate_password = document.getElementById("validate_password");
+		var password = document.getElementById("password");
+		password.onfocus = function(){
+		validate_password.innerHTML = "&nbsp;☹".fontcolor("red").bold();
+		}
+		password.onblur = function(){
+		validate_password.innerHTML = "";
+		}
+		
+		var submitID= document.getElementById("submitID");
+		var submit = document.getElementById("submit");
+		submitID.onmousemove = function(){
+		submit.innerHTML = "Login is invalid,because this is a static page. thankyou!".fontcolor("red");
+		}
+		submitID.onmouseout = function(){
+		submit.innerHTML = "";
+		}
+		
+		var marquee = document.getElementById("marquee");
+		marquee.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+		
+		var intro_table= document.getElementById("intro_table");
+		var intro = document.getElementById("intro");
+		intro_table.onmousemove = function(){
+		intro.innerHTML = "<li style=\"list-style: none;\">technology </li><li type=\"circle\">html5、css、javascript</li>".fontcolor("palevioletred");
+		}
+		
+		var about_me= document.getElementById("about_me");
+		var intro = document.getElementById("intro");
+		about_me.onmousemove = function(){
+		intro.innerHTML = "<li>I'm Chen Jing, graduated from ShenYang Ligong University in 2015, Bachelor of Electronic Science and Technology, now engaged in IT work, I am good at the development of Java based web backend</li>".fontcolor("lightseagreen");
+		}
+		
+		var what_is_test_page= document.getElementById("what_is_test_page");
+		var intro = document.getElementById("intro");
+		what_is_test_page.onmousemove = function(){
+		intro.innerHTML = "<li>This is just a static page for testing, more about the use of the Front-End/Back-End base and framework and so on, the follow-up will be gradually updated, thank you</li>".fontcolor("hotpink");
+		}
+		
+		
+		var want_to_know_more= document.getElementById("want_to_know_more");
+		var intro = document.getElementById("intro");
+		want_to_know_more.onmousemove = function(){
+		intro.innerHTML = "<li>[Phone]&nbsp;&nbsp;15040192346</li> <li>[Email]&nbsp;&nbsp;mrcjing@yeah.net</li> <li>[Website]&nbsp;<a href=\"http://mrjingchen.cn\">http://mrjingchen.cn</a></li> <li>[Github]&nbsp;<a href=\"https://github.com/mrJingChen\">https://github.com/mrJingChen</a></li> ".fontcolor("Gray");
+		
+		}
+		
+		
+		
+		
+		
+		var color_name= document.getElementById("color_name");
+		var color_td1 = document.getElementById("color_td1");
+		color_td1.onmousemove = function(){
+		color_td1.style="background-color: magenta";
+		color_name.innerHTML = color_td1.axis;
+		}
+		color_td1.onmouseout = function(){
+		color_td1.style="";
+		}
+		
+		var color_td2 = document.getElementById("color_td2");
+		color_td2.onmousemove = function(){
+		color_td2.style="background-color: aquamarine";
+		color_name.innerHTML = color_td2.axis;
+		}
+		color_td2.onmouseout = function(){
+		color_td2.style="";
+		}
+		
+		var color_td3 = document.getElementById("color_td3");
+		color_td3.onmousemove = function(){
+		color_td3.style="background-color: LightPink";
+		color_name.innerHTML = color_td3.axis;
+		}
+		color_td3.onmouseout = function(){
+		color_td3.style="";
+		}
+		
+		var color_td4 = document.getElementById("color_td4");
+		color_td4.onmousemove = function(){
+		color_td4.style="background-color: LightGreen";
+		color_name.innerHTML = color_td4.axis;
+		}
+		color_td4.onmouseout = function(){
+		color_td4.style="";
+		}
+		
+		var color_td5 = document.getElementById("color_td5");
+		color_td5.onmousemove = function(){
+		color_td5.style="background-color: Salmon";
+		color_name.innerHTML = color_td5.axis;
+		}
+		color_td5.onmouseout = function(){
+		color_td5.style="";
+		}
+		
+		var color_td6 = document.getElementById("color_td6");
+		color_td6.onmousemove = function(){
+		color_td6.style="background-color: SlateBlue";
+		color_name.innerHTML = color_td6.axis;
+		}
+		color_td6.onmouseout = function(){
+		color_td6.style="";
+		}
+		
+		var color_td7 = document.getElementById("color_td7");
+		color_td7.onmousemove = function(){
+		color_td7.style="background-color: Teal";
+		color_name.innerHTML = color_td7.axis;
+		}
+		color_td7.onmouseout = function(){
+		color_td7.style="";
+		}
+		
+		var color_td8 = document.getElementById("color_td8");
+		color_td8.onmousemove = function(){
+		color_td8.style="background-color: YellowGreen";
+		color_name.innerHTML = color_td8.axis;
+		}
+		color_td8.onmouseout = function(){
+		color_td8.style="";
+		}
+		
+		var color_td9 = document.getElementById("color_td9");
+		color_td9.onmousemove = function(){
+		color_td9.style="background-color: Violet";
+		color_name.innerHTML = color_td9.axis;
+		}
+		color_td9.onmouseout = function(){
+		color_td9.style="";
+		}
+		
+		var color_td10 = document.getElementById("color_td10");
+		color_td10.onmousemove = function(){
+		color_td10.style="background-color: SteelBlue";
+		color_name.innerHTML = color_td10.axis;
+		}
+		color_td10.onmouseout = function(){
+		color_td10.style="";
+		}
+		
+		var color_td11 = document.getElementById("color_td11");
+		color_td11.onmousemove = function(){
+		color_td11.style="background-color: DeepPink";
+		color_name.innerHTML = color_td11.axis;
+		}
+		color_td11.onmouseout = function(){
+		color_td11.style="";
+		}
+		
+		var color_td12 = document.getElementById("color_td12");
+		color_td12.onmousemove = function(){
+		color_td12.style="background-color: FloralWhite";
+		color_name.innerHTML = color_td12.axis;
+		}
+		color_td12.onmouseout = function(){
+		color_td12.style="";
+		}
+		
+		var color_td13 = document.getElementById("color_td13");
+		color_td13.onmousemove = function(){
+		color_td13.style="background-color: Gold";
+		color_name.innerHTML = color_td13.axis;
+		}
+		color_td13.onmouseout = function(){
+		color_td13.style="";
+		}
+		
+		var color_td14 = document.getElementById("color_td14");
+		color_td14.onmousemove = function(){
+		color_td14.style="background-color: magenta";
+		color_name.innerHTML = color_td14.axis;
+		}
+		color_td14.onmouseout = function(){
+		color_td14.style="";
+		}
+		
+		var color_td15 = document.getElementById("color_td15");
+		color_td15.onmousemove = function(){
+		color_td15.style="background-color: HoneyDew";
+		color_name.innerHTML = color_td15.axis;
+		}
+		color_td15.onmouseout = function(){
+		color_td15.style="";
+		}
+		
+		var color_td16 = document.getElementById("color_td16");
+		color_td16.onmousemove = function(){
+		color_td16.style="background-color: LawnGreen";
+		color_name.innerHTML = color_td16.axis;
+		}
+		color_td16.onmouseout = function(){
+		color_td16.style="";
+		}
+		
+		var color_td17 = document.getElementById("color_td17");
+		color_td17.onmousemove = function(){
+		color_td17.style="background-color: LightSkyBlue";
+		color_name.innerHTML = color_td17.axis;
+		}
+		color_td17.onmouseout = function(){
+		color_td17.style="";
+		}
+		
+		var color_td18 = document.getElementById("color_td18");
+		color_td18.onmousemove = function(){
+		color_td18.style="background-color: MediumOrchid";
+		color_name.innerHTML = color_td18.axis;
+		}
+		color_td18.onmouseout = function(){
+		color_td18.style="";
+		}
+		
+		var color_td19 = document.getElementById("color_td19");
+		color_td19.onmousemove = function(){
+		color_td19.style="background-color: MediumVioletRed";
+		color_name.innerHTML = color_td19.axis;
+		}
+		color_td19.onmouseout = function(){
+		color_td19.style="";
+		}
+		
+		var color_td20 = document.getElementById("color_td20");
+		color_td20.onmousemove = function(){
+		color_td20.style="background-color: Chartreuse";
+		color_name.innerHTML = color_td20.axis;
+		}
+		color_td20.onmouseout = function(){
+		color_td20.style="";
+		}
+		
+		
+	 }
+</script>
+
+
+
+
+<style type="text/css">
+#header-div{
+	height: 6%;
+	width: 100%;
+	background-color: lightseagreen;
+}
+
+#menu-div{
+	height: 91%;
+	width: 100%;
+	background-color: aliceblue;
+}
+
+#footer{
+	height: 3%;
+	width: 100%;
+	background-color: honeydew;
+}
+
+#welcome{
+	float: left;
+	font-size: 16px;
+	font-family: verdana, courier, serif;
+	color: white;
+	margin: 10px 0 0 20px;	
+	
+}
+
+#quit{
+	float: right;
+	font-size: 12px;
+	font-family: verdana, courier, serif;
+	margin: 15px 25px 0 0;
+}
+		
+#copyright{
+	font-size: 12px;
+	font-family: verdana, courier, serif;
+	text-align: center;
+	color: gray;
+}
+
+
+a{
+	text-decoration: none;
+	font-weight: normal;
+}
+		
+a:link {color: black}     	/* unvisited link */
+a:visited {color: gray}  	/* visited link */
+a:hover {color: red}   		/* mouse over link */
+a:active {color: green}  	/* selected link */	
+
+#about_me,#what_is_test_page,#want_to_know_more,#intro_table{
+	cursor: pointer
+}
+
+#color_table td{
+	width: 15px;
+	height: 15px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="header-div">
+    <div id="logo-div" >
+		<font id="welcome">Hi, Welcome to my test Page!</font>
+    </div>
+    <div id="quit">      
+        current time：<span id="time"></span>&nbsp;&nbsp;
+        <a href="#" target="_top" class="fix-submenu" >quit</a>
+    </div>
+</div>
+
+<div id="menu-div">
+    <div>
+		<marquee direction="right" scrollamount="5" loop="-1" >&Delta; <span id="marquee"></span>&Scaron;	<span style="color: fuchsia" >&hearts;</span>	&Yuml;</marquee>
+		<marquee direction="lift" scrollamount="1" loop="-1" >&sigmaf; &piv; </marquee>
+		<marquee direction="right" scrollamount="3" loop="-1" >&Theta;<span id="marquee"></span><span style="color: #66ffff">♫</span>	&Xi;</marquee>	
+		<marquee direction="lift" scrollamount="2" loop="-1" >&Omega; <span style="color: hotpink">♬</span></marquee>
+		<marquee direction="right" scrollamount="1" loop="-1" >&Phi;&zeta;</marquee><marquee direction="lift" scrollamount="4" loop="-1" >&OElig;</marquee>
+
+		<marquee direction="left" scrollamount="3" loop="-1" >
+		<span style="color: red">♩</span><span id="marquee"></span>		<span style="color: green" >♪</span><span id="marquee"></span>
+		<span style="color: blue">♫</span><span id="marquee"></span>	<span  style="color: violet">☀</span><span id="marquee"></span>
+		</marquee>
+	</div>
+	
+	<div>
+		 <form action="#" >
+		 <table align="center" border="1" style="width: 90%; height: 65%;border-collapse:collapse; " >
+			<tr style="height: 100%;">
+		 		<td style="width: 30%;">
+					<table align="center" border="0" style="width: 100%; height: 100%" >
+						<tr align="left" style="height: 15%;" >
+							<td  colspan="4" id="intro_table" >Intro</td>
+						</tr>
+						
+						<tr id="test" style="height: 18%;">
+							<td valign="bottom" id="about_me" >About me</td>	
+							<td valign="middle"id="what_is_test_page" >What is test page</td>	
+							<td valign="baseline" id="want_to_know_more">Want to know more</td>
+						</tr>
+					 <!-- 	
+						<tr  style="text-indent: 15%;">
+							<td id="about_me" >About me</td>
+						</tr>
+						<tr style="text-indent: 15%;">
+							<td id="what_is_test_page" >What is test page</td>
+						</tr>
+						<tr style="text-indent: 15%;">
+							<td id="want_to_know_more" >Want to know more</td>
+						</tr>
+					-->	
+						<tr align="center" >
+							<td align="left" colspan="4" ><ul><span id="intro"></span></ul></td>
+						</tr>
+					</table>
+				</td>
+				
+		 		<td style="width: 50%;">
+					<table align="center" border="0" style="width: 60%; border-collapse:collapse; " >
+						<caption style="color:lightskyblue; font-size: larger; padding-bottom: 20px;">Please login !</caption>
+						<tbody>
+							<tr>
+								<td width="30%;">Username：&nbsp;&nbsp; </td>
+								<td width="50%;" colspan="2"><input size="20" value=""  name="username" id="username" style="width: 100%;"/>
+								<td ><span id="validate_username"></span></td>
+							</tr>
+							<tr>
+								<td > Password： &nbsp;&nbsp;</td>
+								<td colspan="2"><input type="password" name="password" size="20" id="password" style="width: 100%;"/></td>
+								<td><span id="validate_password"></span></td>
+							</tr>
+							<tr id="submitID" >
+								<td>&nbsp;</td>
+								<td  align="center" colspan="2"><input type="submit" value="login" class="button" name="Submit" />
+								<input type="reset" value="reset" id="Reset">
+								</td>
+								<td></td>
+							</tr>
+							
+						</tbody>			
+					</table>
+				</td>
+		 		<td style="width: 20%; vertical-align: top;">
+						<div style="height: 80%;">
+							<table id="color_table" align="center" border="0" style="width: 100%; height: 100%;">
+									<caption style="text-align: left; text-indent: 10%; padding-bottom: 15px;">color table:&nbsp;&nbsp;<span id="color_name"></span></caption>
+									<tr>
+										<td id="color_td1" axis="magenta" ></td>
+										<td id="color_td2" axis="aquamarine"></td>
+										<td id="color_td3" axis="LightPink"></td>
+										<td id="color_td4" axis="LightGreen "></td>
+									</tr>
+									<tr>
+										<td id="color_td5" axis="Salmon "></td>
+										<td id="color_td6" axis="SlateBlue "></td>
+										<td id="color_td7" axis="Teal "></td>
+										<td id="color_td8" axis="YellowGreen "></td>
+									</tr>
+									<tr>
+										<td id="color_td9" axis="Violet "></td>
+										<td id="color_td10" axis="SteelBlue "></td>
+										
+										<td id="color_td11" axis="DeepPink "></td>
+										<td id="color_td12" axis="FloralWhite "></td>
+									</tr>
+									<tr>
+										<td id="color_td13" axis="Gold "></td>
+										<td id="color_td14" axis="magenta"></td>
+										<td id="color_td15" axis="HoneyDew "></td>
+										<td id="color_td16" axis="LawnGreen "></td>
+									</tr>
+									<tr>
+										<td id="color_td17" axis="LightSkyBlue "></td>
+										<td id="color_td18" axis="MediumOrchid "></td>
+										<td id="color_td19" axis="MediumVioletRed "></td>
+										<td id="color_td20" axis="Chartreuse "></td>
+									</tr>
+									
+							</table>
+						</div>						
+						<div id="submit" style="text-align: left; vertical-align: bottom;"></div>
+				</td>
+		 	</tr>
+		</table>
+		
+		
+	</form>
+	</div>
+	
+</div>
+
+<div id="footer">
+	<div id="copyright" >Copyright &copy; 2017,<a href="http://mrjingchen.cn" >mrjingchen.cn</a>,All Rights Reserved</div>
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function time(){
+		var currentTime =  new Date().toLocaleString();
+		var str = document.getElementById("time");
+		str.innerHTML = currentTime.fontcolor("white");   
+		window.setTimeout("time()", 1000);
+	}
+	time();
+</script>
