@@ -349,21 +349,26 @@ a:active {color: green}  	/* selected link */
 		</marquee>
 	</div>
 	
+	<!-- center div-->
 	<div>
 		 <form action="#" >
-		 <table align="center" border="1" style="width: 90%; height: 65%;border-collapse:collapse; " >
+		 <table align="center" border="1" style="width: 98%; height: 65%;border-collapse:collapse; " >
 			<tr style="height: 100%;">
-		 		<td style="width: 30%;">
+		 		<!--left table-->
+				<td style="width: 20%;">
 					<table align="center" border="0" style="width: 100%; height: 100%" >
 						<tr align="left" style="height: 15%;" >
 							<td  colspan="4" id="intro_table" >Intro</td>
 						</tr>
 						
+                     <!-- 					
 						<tr id="test" style="height: 18%;">
 							<td valign="bottom" id="about_me" >About me</td>	
 							<td valign="middle"id="what_is_test_page" >What is test page</td>	
 							<td valign="baseline" id="want_to_know_more">Want to know more</td>
-						</tr>
+						</tr>	
+					-->		
+					
 					 <!-- 	
 						<tr  style="text-indent: 15%;">
 							<td id="about_me" >About me</td>
@@ -373,15 +378,28 @@ a:active {color: green}  	/* selected link */
 						</tr>
 						<tr style="text-indent: 15%;">
 							<td id="want_to_know_more" >Want to know more</td>
-						</tr>
+						</tr>   
 					-->	
+						
+						<tr id="test" style="height: 25%;"  >
+							<td align="left" colspan="4" >							
+								<marquee direction="up" scrollamount="1" loop="-1" height="50%" >
+									<p id="about_me" >About me</p>
+									<p id="what_is_test_page" >What is test page </p>
+									<p id="want_to_know_more">Want to know more </p>
+								</marquee>
+								
+							</td>
+						</tr>
+					
 						<tr align="center" >
 							<td align="left" colspan="4" ><ul><span id="intro"></span></ul></td>
 						</tr>
 					</table>
 				</td>
 				
-		 		<td style="width: 50%;">
+				<!--center table-->
+		 		<td style="width: 50%;">				
 					<table align="center" border="0" style="width: 60%; border-collapse:collapse; " >
 						<caption style="color:lightskyblue; font-size: larger; padding-bottom: 20px;">Please login !</caption>
 						<tbody>
@@ -406,9 +424,12 @@ a:active {color: green}  	/* selected link */
 						</tbody>			
 					</table>
 				</td>
-		 		<td style="width: 20%; vertical-align: top;">
+				
+				<!--right table-->
+		 		<td style="width: 25%; vertical-align: top;">
 						<div style="height: 80%;">
-							<table id="color_table" align="center" border="0" style="width: 100%; height: 100%;">
+							<!--
+								<table id="color_table" align="center" border="0" style="width: 100%; height: 100%;">
 									<caption style="text-align: left; text-indent: 10%; padding-bottom: 15px;">color table:&nbsp;&nbsp;<span id="color_name"></span></caption>
 									<tr>
 										<td id="color_td1" axis="magenta" ></td>
@@ -440,12 +461,16 @@ a:active {color: green}  	/* selected link */
 										<td id="color_td18" axis="MediumOrchid "></td>
 										<td id="color_td19" axis="MediumVioletRed "></td>
 										<td id="color_td20" axis="Chartreuse "></td>
-									</tr>
-									
-							</table>
+									</tr>									
+								</table>
+							-->
+							
+							<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=385 src="http://music.163.com/outchain/player?type=0&id=635779716&auto=1&height=430"></iframe>
+					
 						</div>						
 						<div id="submit" style="text-align: left; vertical-align: bottom;"></div>
 				</td>
+				
 		 	</tr>
 		</table>
 		
