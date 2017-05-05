@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="JingChen's Personal Website">
+	<meta name="keywords" content="陈菁,chenjing,charles,java">	
+	<meta name="author" content="Jing Chen" />
+	
+	<title>Home - JingChen's Personal Website</title>	
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/common/16.png" />
+    <link href="./css/layout.css" type="text/css" rel="stylesheet">	<!--导航、整体布局-->
+	
+	<link href="./css/easyui/default/easyui.css" type="text/css" rel="stylesheet">	<!--easyui-->
+	<link href="./css/easyui/icon.css" type="text/css" rel="stylesheet">
+	
+	<script type="text/javascript" src="./js/easyui/jquery.min.js"></script>	<!--easyui-->
+	<script type="text/javascript" src="./js/easyui/jquery.easyui.min.js"></script>	
+	<script type="text/javascript" src="./js/easyui/jquery.easyui.mobile.js"></script>	
+	<script type="text/javascript" src="./js/easyui/easyui-lang-zh_CN.js"></script>	
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+			//添加3个菜单按钮
+			$('#watch').linkbutton({   
+				plain: 'true',		//简洁效果：无背景等
+				iconCls: 'icon-watch'		
+			});
+			$('#man').menubutton({    
+				iconCls: 'icon-man',    
+				menu: '#m2' ,
+				hasDownArrow: 'true'				
+			});
+			$('#help').menubutton({    
+				iconCls: 'icon-help',    
+				menu: '#m3' ,
+				hasDownArrow: 'true'
+			}); 
+			
+			//添加登录1.提示框
+			$('#login').click(function(){
+				$.messager.confirm('登录提示','网站正在建设中，敬请期待？',function(r){    
+					if (r){    					
+						$.messager.alert('退出登录','谢谢','aixin');
+					}    
+				});		
+			});
+		/**/	
+		
+			//添加登录2.事件	
+		/*	$('#login').click(function(){		
+					//法1直接打开窗口；法2用ajax打开创建
+				$('#win').window('refresh', 'load.html').window("open");
+			});
+			//
+			$("#win").window({					
+				width:'300px',
+				height:'180px',				
+				modal:true,	//遮罩效果，除窗口以外的元素都不能操作
+				title:"login",				
+				closed:true	//默认关闭窗口
+			});	
+		*/
+			//添加内容区content1.提示框
+			$('.content1').click(function(){				  					
+				$.messager.alert('温馨提示','网站正在建设中，敬请期待，谢谢','aixin');					
+			});
+			//添加内容区content2.提示框
+			$('.content2').click(function(){				  					
+				$.messager.alert('温馨提示','网站正在建设中，敬请期待，谢谢','aixin');					
+			});
+			//添加内容区content3.提示框
+			$('.content3').click(function(){				  					
+				$.messager.alert('温馨提示','网站正在建设中，敬请期待，谢谢','aixin');					
+			});
+			
+			
+		});		 
+	</script>	
+	
+</head>
+<body>
+<!--①logo、②menu、③banner(可flash)、④content(新闻、简介、产品、项目)、⑤copyright(可联系)-->
+
+	<!-- container整个容器 -->
+    <div class="container">
+      
+		<!-- wrapper（content/body）-->
+		<div class="wrapper">
+		
+			<!-- body head 正文中头部所有（logo、nav、login）-->
+            <div class="heading">
+				
+				<!-- navigation导航 -->
+                <div class="heading_nav">
+
+                    <div class="heading_title">		
+						<h1><!--提供访问权重-->
+							<a href="http://mrjingchen.cn" title="JingChen's Personal Website">个人网站</a>
+						</h1>											
+                    </div>
+					
+                    <div class="heading_navbar">
+						<nav>			
+							<ul>
+								<li><a href="#">首页</a></li>															
+								<li><a href="#">涉及技术</a>
+									<ul class="subnav">
+										<li ><a href="#">html5</a></li>
+										<li ><a href="#">css3</a></li>
+										<li ><a href="#">easyui...</a></li>
+									</ul>								
+								</li>
+								<li><a href="#">关于</a></li>
+								<li><a href="#">联系</a>
+									<ul class="subnav">
+										<li ><a href="http://mrjingchen.cn" title="mrjingchen.cn">websit</a></li>
+										<li ><a href="https://github.com/mrJingChen" title="github.com/mrJingChen">github</a></li>
+										<li ><a href="#" title="mr2jingchen@gmail.com">email...</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+                    </div>
+                   
+					<div class="heading_img">
+				<!--		<input id="login" type="hidden" class="login" value="Login"/>-->
+						<a href="#" id="login" class="login" >Login</a>
+                        <img src="./images/common/in.png">
+                    </div>
+					<!--登录窗口1，ajax
+					<div id="win"></div>	-->
+					
+					<!--登录窗口2，默认close
+					<div id="win" >
+						<form style="padding:10px 20px 10px 40px;">
+							<p>Name: <input type="text"></p>
+							<p>Pass: <input type="password"></p>
+							<div style="padding:5px;text-align:center;">
+								<a href="#" class="easyui-linkbutton" icon="icon-ok">Ok</a>
+								<a href="#" class="easyui-linkbutton" icon="icon-cancel">Cancel</a>
+							</div>
+						</form>
+					</div>	-->					
+				
+					<!--搜索框-->
+                    <div class="heading_soptlight">				
+                        <form action="http://www.baidu.com/baidu" target="_blank">
+							<input name=tn type=hidden value=baidu>
+                            <input class="input" type="text" name=word >
+							<input class="submit"type="submit" value="百度一下"> 																	
+						</form>	
+										
+                    </div>					
+					
+                </div>
+				<!-- end navigation导航 -->	
+				
+            </div>
+			<!-- end body head-->
+			
+			<!-- body content 正文内容所有（三大段落）-->
+            <div class="body">
+			
+                <!-- one para 第一大段落 -->
+				<div class="body_title">
+					<div class="movebox"></div>	<!-- movebox -->			
+                    <h3>欢迎来访</h3>
+					<div class="uimenu" >
+						<span id="watch">Watch</span> <!--空-->
+						<span id="man">Man</span> 
+						<span id="help">Help</span>   
+					</div>
+						
+						<div id="m2" >   							
+							<div iconCls="icon-knowledge">Knowledge</div>
+							<div iconCls="icon-travel">Travel</div>
+						</div> 
+						<div id="m3" >   
+							<div iconCls="icon-update">Update</div>
+							<div iconCls="icon-about">About</div>
+						</div> 
+                    <p>想了解更多......</p>
+					
+                </div>
+				<!-- end one para -->
+                <hr/>
+                <hr/>
+				<br/>			
+				
+				<!-- two Para graillayout（banner、music)-->
+				<div class="graillayout">								
+					<!-- banner -->				
+					<div class="column banner">
+						<h1>banner...</h1>
+						
+						
+					</div>
+					<!--end banner-->
+					
+					<div class="column music">
+						<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300px height=500px src="http://music.163.com/outchain/player?type=0&id=635779716&auto=1&height=430"></iframe>
+					</div>					
+				</div>
+				<!-- end two Para graillayout（banner、music)-->
+				
+				<!-- waterfall瀑布流
+				<div class="waterfall">
+					<div><img src="./images/waterfall/1.jpg"> <p>添加图注</p> </div>
+					<div><img src="./images/waterfall/2.jpg"> <p>添加图注</p> </div>
+					<div><img src="./images/waterfall/3.jpg"> </div>
+					<div><img src="./images/waterfall/4.jpg"> <p>添加图注</p> </div>
+					<div><img src="./images/waterfall/5.jpg"> <p>添加图注</p> </div>
+				</div>-->		
+				<!--end waterfall-->
+				<br/>
+                <br/>
+				<!-- three para 第三大段落-->
+				<div class="threepara"> 
+					<div class="info-three"> 
+						<!-- 1、about author -->
+						<div class="info"><a href="#" title="职业(履历)"><span class="content1">了解更多，关于我..</span></a></div>					<!--响应式时，使用span不利于位置调整-->
+						<div class="inforight">	
+							<div class="three">	
+								<div class="author"><img src="./images/waterfall/page.png"> <a href="#">what is page</a> </div>		<!-- 如果再使用span标签存放，相对父div标签要居中就很困难，可考虑用p标签 -->			
+								<div class="author"><img src="./images/waterfall/me.png"> <a href="#">about me</a> </div>
+								<div class="author"><img src="./images/waterfall/more.png"> <a href="#">know more</a> </div>
+							</div>
+							<!--end 1、about author-->
+						</div>						
+					</div>
+					<br/>
+					
+					<div class="info-three"> 
+						<!-- 2、about travel -->
+						<div class="info"><a href="#" title="生活(旅行)"><span class="content2">世界很大，你有空吗？</span></a></div>
+						<div class="inforight">											
+							<div class="three">
+								<div class="author"><img src="./images/waterfall/01.png"> <a href="#">NEXT</a> </div>					
+								<div class="author"><img src="./images/waterfall/Guangzhou.png"> <a href="#">Guangzhou</a> </div>
+								<div class="author"><img src="./images/waterfall/Shanghai.png"> <a href="#">Shanghai</a> </div>
+							</div>
+							<!--end 2、about travel-->
+						</div>							
+					</div>
+					<br/>
+					
+					<div class="info-three"> 
+						<!-- 2、about travel -->
+						<div class="info"><a href="#" title="评论(留言)"><span class="content3">和我讲讲，你的故事！</span></a></div>
+						<div class="inforight">											
+							<div class="three">
+								<div class="author"><img src="./images/waterfall/1.png"> <a href="#">photograph</a> </div>					
+								<div class="author"><img src="./images/waterfall/hello.png"> <a href="#">photograph</a> </div>
+								<div class="author"><img src="./images/waterfall/2.png"> <a href="#">photograph</a> </div>
+							</div>
+							<!--end 2、about travel-->
+						</div>							
+					</div>
+					
+				</div>
+				<!-- end three para -->
+				
+            </div>
+			<!-- end body content-->		
+			
+			<!-- 待添加？ -->
+			<div class="wait">			
+				<div style="background-color:PowderBlue ; text-align:center;">下面更精彩...</div>
+			</div>
+			<!-- end 待添加 -->
+						
+        </div>
+		<!-- end wrapper（content/body）-->
+			
+		<!-- foot -->
+        <div class="footing">			
+            <div id="copyright" >Copyright &copy; 2017,<a href="http://mrjingchen.cn" >mrjingchen.cn</a>,All Rights Reserved</div>
+        </div>
+		<!-- end foot -->
+		
+				
+    </div>
+	<!-- end container -->		
+</body>
+</html>

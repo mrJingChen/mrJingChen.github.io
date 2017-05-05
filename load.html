@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="JingChen's Personal Website">
+	<meta name="keywords" content="陈菁,chenjing,charles,java">	
+	<meta name="author" content="Jing Chen" />
+	
+	<title>login</title>	
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/common/16.png" />	
+	<link href="./css/easyui/default/easyui.css" type="text/css" rel="stylesheet">	<!--easyui-->
+	<link href="./css/easyui/icon.css" type="text/css" rel="stylesheet">
+	
+	<script type="text/javascript" src="./js/easyui/jquery.min.js"></script>	<!--easyui-->
+	<script type="text/javascript" src="./js/easyui/jquery.easyui.min.js"></script>	
+	<script type="text/javascript" src="./js/easyui/jquery.easyui.mobile.js"></script>	
+	<script type="text/javascript" src="./js/easyui/easyui-lang-zh_CN.js"></script>	
+	<script type="text/javascript">
+		//一、页面完成即加载
+		$(document).ready(function(){		
+						
+			//示范
+			$('#load').linkbutton({
+				plain: 'true'				 
+			}); 		
+			$('#load').bind('click', function(){    
+				$('#ff').form('load',{
+				name:'myname',
+				email:'mymail@gmail.com',
+				password:'abc123'
+				});  
+			});
+			//清除
+			$('#clear').linkbutton({
+				plain: 'true'				 
+			});
+			$('#clear').bind('click', function(){    
+				$('#ff').form('clear');
+			});
+			
+			//提交
+			$('#login').linkbutton({
+				plain: 'true'	  
+			});
+			
+			
+
+
+			
+		});
+		
+	</script>	
+	
+</head>
+<body>
+	
+	<div class="easyui-window" title="New Topic" style="width:400px;  background-color:white;">
+		<div style="padding:10px 60px 10px 60px; ">
+			<form id="ff" method="post">
+				<table cellpadding="5">
+					<tr>
+						<td>Name:</td>
+						<td colspan="2"><input class="easyui-textbox" type="text" name="name" data-options="required:true"></input></td>
+					</tr>
+					<tr>
+						<td>password:</td>
+						<td colspan="2"><input class="easyui-textbox" type="password" name="password" data-options="required:true"></input></td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td colspan="2"><input class="easyui-textbox" type="text" name="email" data-options="required:true,validType:'email'"></input></td>
+					</tr>	    		
+					<tr>		
+						<td class="login" colspan="3" style="text-align:center;">						 
+							<a id="load" href="javascript:void(0)" >Demo</a>											
+							<a id="clear" href="javascript:void(0)" >Clear</a>
+							<a id="login" href="#">login</a>
+						</td>
+					</tr>
+				</table>
+			</form> 
+		</div>
+	</div>
+	
+</body>
+</html>
