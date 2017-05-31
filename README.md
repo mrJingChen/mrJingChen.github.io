@@ -1,9 +1,9 @@
 >
 	Home - JingChen's Personal Website
 
-<http://mrJingChen.github.io>
+<http://mrjingchen.cn>
 
-[个人主页](http://mrjingchen.cn)
+[个人主页](http://mrJingChen.github.io)
 
 ----
 
